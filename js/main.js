@@ -67,19 +67,15 @@ $(window).on('scroll',function(){
         $('.Up').addClass('up').fadeIn();
     }
     if(scr >= hig*6 && scr < hig*7 ){
-        $('nav button').eq(6).addClass('web').siblings().removeClass();
+        $('nav button').eq(6).addClass('video').siblings().removeClass();
         $('.Up').addClass('up').fadeIn();
     }
     if(scr >= hig*7 && scr < hig*8 ){
         $('nav button').eq(7).addClass('video').siblings().removeClass();
         $('.Up').addClass('up').fadeIn();
     }
-    if(scr >= hig*8 && scr < hig*9 ){
-        $('nav button').eq(8).addClass('video').siblings().removeClass();
-        $('.Up').addClass('up').fadeIn();
-    }
-    if(scr >= hig*9){
-        $('nav button').eq(9).addClass('etc').siblings().removeClass();
+    if(scr >= hig*8){
+        $('nav button').eq(8).addClass('etc').siblings().removeClass();
         $('.Up').addClass('up').fadeIn();
     }
 });//button 모양 변경
@@ -175,7 +171,7 @@ $('.view i, .closeWrap, .vView i, .vView .closeWrap').on('click',function(){
 
 /*[ designMain2 ]*****************************************************************************************************************************/
 
-let photoSrc2 = ["d07-amasvinSubBn.jpg","d08-amasvinSubBn.jpg","d09-amasvinSubBn.jpg"];
+let photoSrc2 = ["d07-amasvinSubBn.jpg","d08-amasvinSubBn.jpg","d09-amasvinSubBn.jpg","d10-amasvinBn.jpg","d11-amasvinSubBn.jpg"];
 $('.designMain2 .photoBox').on('click',function(e){
     e.preventDefault();
             
@@ -231,16 +227,16 @@ $('.designMain2 .photoBox').on('click',function(e){
             'transformTranslate':'-50%, -32%'});
 
         $('.txtBot').css({
-            'bottom':'29%',
+            'bottom':'25%',
             'transformTranslate':'-50%, -29%'});
 
     }else if(i == 4){
         $('.txtTop').css({
-            'top':'32%',
+            'top':'25%',
             'transformTranslate':'-50%, -32%'});
 
         $('.txtBot').css({
-            'bottom':'29%',
+            'bottom':'22%',
             'transformTranslate':'-50%, -29%'});
 
     }else if(i == 5){
@@ -314,12 +310,13 @@ $('.slide .box, .slide2 .box').on('click',function(e){
     $('.vView').fadeIn();
     $('.vView figure').html(iframe);
 
-    let h4 = $('.conSlide').find('.txt').children('h4').html();
-    $('.vView h4').html(h4);
 
-    let span = $('.conSlide').find('.txt').children('span').html();
-    $('.vView span').html(span);
-    
+    let vidTit = $(this).find('.vidTit').text();
+    $('.vView').find('h4').html(vidTit);
+
+    let vidPt = $(this).find('.vidPt').text();
+    $('.vView').find('span').html(vidPt);
+
 });
 
 

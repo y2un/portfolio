@@ -43,9 +43,8 @@ nav button:nth-child(3){background-color: #e5a1a1;}
 nav button:nth-child(4){background-color: #e5a1a1;}
 nav button:nth-child(5){background-color: #7393c8;}
 nav button:nth-child(6){background-color: #7393c8;}
-nav button:nth-child(7){background-color: #7393c8;}
+nav button:nth-child(7){background-color: #fab860;}
 nav button:nth-child(8){background-color: #fab860;}
-nav button:nth-child(9){background-color: #fab860;}
 nav button:last-child{
     margin-bottom: 0;
     background-color: #ddd;
@@ -173,7 +172,7 @@ h1{
     width: 1320px;
     margin: 0px auto;
     display: flex;    
-    padding-top: 100px;
+    padding-top: 144px;
     box-sizing: border-box;
 }
 .main .con{
@@ -228,10 +227,13 @@ h1{
 .main .box2 .txt{
     width: 360px;
     height: 242px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     padding-top: 25px;
     box-sizing: border-box;
+}
+.main .box2 .txt p{
+    margin-bottom: 10px;
 }
 
 .main .box3{
@@ -248,12 +250,18 @@ h1{
 }
 .education, .eduTxt{
     height: 217px;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 .certificate, .cerTxt{
     height: 305px;
+    padding-top: 40px;
+    box-sizing: border-box;
 }
 .skils .skilTxt{
     height: 248px;
+    padding-top: 10px;
+    box-sizing: border-box;
 }
 
 .main .box4{
@@ -311,15 +319,15 @@ h1{
     margin-top: 15px;
 }
 .gauge .html:after{
-    width: 85%;
+    width: 75%;
     top: 0;
 }
 .gauge .css:after{
-    width: 85%;
+    width: 75%;
     top: 35px;
 }
 .gauge .js:after{
-    width: 65%;
+    width: 55%;
     top: 70px;
 }
 .gauge .photoshop:after{
@@ -335,7 +343,7 @@ h1{
     top: 175px;
 }
 .gauge .After:after{
-    width: 75%;
+    width: 65%;
     top: 210px;
 }
 
@@ -457,6 +465,14 @@ h1{
 }
 .photoWrap .amasvin4{
     background-image: url(../images/d09-amasvinSubBn.jpg);
+    background-position: 50% bottom;
+}
+.photoWrap .amasvin5{
+    background-image: url(../images/d10-amasvinBn.jpg);
+    background-position: 50% bottom;
+}
+.photoWrap .amasvin6{
+    background-image: url(../images/d11-amasvinSubBn.jpg);
     background-position: 50% bottom;
 }
 .photoBox:hover .photoBoxHover{
@@ -787,13 +803,54 @@ figure img{width: 100%;}
     text-indent: 20px;
 }
 
+
+.videoMain .slide .box{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;
+    z-index: 50;
+}
+.videoMain .slide .box1{
+    background-image: url(../images/v1_game1.jpg);
+}
+.videoMain .slide .box2{
+    background-image: url(../images/v1_music2.png);
+}
+.videoMain .slide .box3{
+    background-image: url(../images/v1_false3.jpg);
+}
+.videoMain .slide .box4{
+    background-image: url(../images/v1_money4.jpg);
+}
+.videoMain .slide .box5{
+    background-image: url(../images/v1_skype5.png);
+}
+.videoMain .slide .box6{
+    background-image: url(../images/v1_sp6.png);
+}
+.videoMain .slide .box7{
+    background-image: url(../images/v1_sudar7.jpg);
+}
+.videoMain .slide .box8{
+    background-image: url(../images/v1_home8.jpg);
+}
+.videoMain .slide .box9{
+    background-image: url(../images/v1_disabled9.jpg);
+}
+.videoMain .slide .box10{
+    background-image: url(../images/v1_cafe10.jpg);
+}
+
+
+
 .slide .box, .slide2 .box{
     width: 420px;
-    height: 290px;
+    height: 210px;
     line-height: 290px;
     text-align: center;
     font-size: 30px;
-    background-color: #fff;
+    background-color: #000;
     margin: 0 20px;
     border-radius: 20px;
     overflow: hidden;
@@ -853,8 +910,7 @@ figure img{width: 100%;}
     font-size: 22px;
 }
 .conSlide .txt, .conSlide2 .txt{
-    margin-top: 24px;
-    margin-left: 24px;
+    margin: 24px;
     position: relative;
 }
 .conSlide h4, .conSlide2 h4{
@@ -899,6 +955,7 @@ figure img{width: 100%;}
 }
 h2{
     font-size: 42px;
+    margin-bottom: 25px;
 }
 
 .footer .con2{
@@ -968,6 +1025,12 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+}
+.footer .btn img{
+    margin-bottom: 26px;
+    width: 44px;
+    height: 50px;
 }
 .footer button{
     width: 120px;
@@ -985,11 +1048,7 @@ h2{
     margin-left: 12px;
     animation-duration: 0.6s;
 }
-.resume i{
-    margin-left: 22px;
-    animation-duration: 0.6s;
-}
-.self i.rotate, .resume i.rotate{
+.self i.rotate{
     animation-name: selfArrow;
 }
 @keyframes selfArrow{
@@ -1026,7 +1085,7 @@ h2{
 }
 
 .copyright{
-    margin-top: 90px;
+    margin-top: 130px;
     font-size: 18px;
     width: 100%;
     height: 46px;
