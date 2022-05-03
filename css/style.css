@@ -598,7 +598,7 @@ figure img{width: 100%;}
     overflow: hidden;
 }
 .wWrap .con1 .box img{
-    animation-duration: 6s;
+    animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -610,8 +610,15 @@ figure img{width: 100%;}
     0%{top: 0;}
     100%{top: -1230px;}
 }
-.wWrap .con1 .box:hover img{
+.wWrap .con1 .aBox:hover img{
     animation-name: canon;
+}
+@keyframes amasvin{
+    0%{top: 0;}
+    100%{top: -1600px}
+}
+.wWrap .con1 .bBox:hover img{
+    animation-name: amasvin;
 }
 .wWrap button a{
     width: 100%;
@@ -665,6 +672,7 @@ figure img{width: 100%;}
 .wWrap .name{
     height: 128px;
     position: relative;
+    font-weight: bold;
 }
 .wWrap .name h3{
     font-family: 'Gugi', cursive;
@@ -700,10 +708,6 @@ figure img{width: 100%;}
     color: #cc0001;
     position: relative;
 }
-.wWrap .color .ed{
-    color: #edf6ff;
-    position: relative;
-}
 .wWrap .color .cc:after{
     content: '';
     width: 14px;
@@ -715,11 +719,11 @@ figure img{width: 100%;}
     top: 2px;
     right: 100px;
 }
-.wWrap .color .thr{
+.wWrap .color .thr, .wWrap .color .thr2{
     color: #333;
     position: relative;
 }
-.wWrap .color .thr:after{
+.wWrap .color .thr:after, .wWrap .color .thr2:after{
     content: '';
     width: 14px;
     height: 14px;
@@ -730,7 +734,39 @@ figure img{width: 100%;}
     top: 2px;
     right: 100px;
 }
-
+.wWrap .color .thr2:after{
+    left: 100px;
+}
+.wWrap .color .ed{
+    color: #edf6ff;
+    position: relative;
+}
+.wWrap .color .ed:after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #edf6ff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 2px;
+    left: 100px;
+}
+.wWrap .color .abb{
+    color: #a6bbe3;
+    position: relative;
+}
+.wWrap .color .abb:after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-color: #a6bbe3;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 2px;
+    left: 100px;
+}
 .wWrap .percent{
     height: 214px;
 }
@@ -811,42 +847,28 @@ figure img{width: 100%;}
     font-size: 0;
     z-index: 50;
 }
-.videoMain .slide .box1{
-    background-image: url(../images/v1_game1.jpg);
-}
-.videoMain .slide .box2{
-    background-image: url(../images/v1_music2.png);
-}
-.videoMain .slide .box3{
-    background-image: url(../images/v1_false3.jpg);
-}
-.videoMain .slide .box4{
-    background-image: url(../images/v1_money4.jpg);
-}
-.videoMain .slide .box5{
-    background-image: url(../images/v1_skype5.png);
-}
-.videoMain .slide .box6{
-    background-image: url(../images/v1_sp6.png);
-}
-.videoMain .slide .box7{
-    background-image: url(../images/v1_sudar7.jpg);
-}
-.videoMain .slide .box8{
-    background-image: url(../images/v1_home8.jpg);
-}
-.videoMain .slide .box9{
-    background-image: url(../images/v1_disabled9.jpg);
-}
-.videoMain .slide .box10{
-    background-image: url(../images/v1_cafe10.jpg);
-}
+.videoMain .slide .box1{background-image: url(../images/v1_game1.jpg); background-size: cover;}
+.videoMain .slide .box2{background-image: url(../images/v1_music2.png); background-size: cover;}
+.videoMain .slide .box3{background-image: url(../images/v1_false3.jpg); background-size: cover;}
+.videoMain .slide .box4{background-image: url(../images/v1_money4.jpg); background-size: cover;}
+.videoMain .slide .box5{background-image: url(../images/v1_skype5.png); background-size: cover;}
+.videoMain .slide .box6{background-image: url(../images/v1_sp6.png); background-size: cover;}
+.videoMain .slide .box7{background-image: url(../images/v1_sudar7.jpg); background-size: cover;}
+.videoMain .slide .box8{background-image: url(../images/v1_home8.jpg); background-size: cover;}
+.videoMain .slide .box9{background-image: url(../images/v1_disabled9.jpg); background-size: cover;}
+.videoMain .slide .box10{background-image: url(../images/v1_cafe10.jpg); background-size: cover;}
 
+.videoMain2 .slide2 .box1{background-image: url(../images/v2_mo1.png); background-position: center; background-size: cover;}
+.videoMain2 .slide2 .box2{background-image: url(../images/v2_mo2.jpg); background-position: center;}
+.videoMain2 .slide2 .box3{background-image: url(../images/v2_mo3.jpg); background-position: center;}
+.videoMain2 .slide2 .box4{background-image: url(../images/v2_ani1.png); background-position: center; background-size: cover;}
+.videoMain2 .slide2 .box5{background-image: url(../images/v2_ani2.png); background-position: center; background-size: cover;}
 
+.videoMain2 .slide2 .box span{font-size: 0;}
 
 .slide .box, .slide2 .box{
     width: 420px;
-    height: 210px;
+    height: 209px;
     line-height: 290px;
     text-align: center;
     font-size: 30px;
@@ -984,7 +1006,7 @@ h2{
 }
 
 .footer .box1{
-    box-shadow: 12px 12px 8px #eacece;
+    box-shadow: 12px 12px 8px #eacece; position: relative;
 }
 .footer .box2{
     box-shadow: 12px 12px 8px #9faccc;
@@ -1016,6 +1038,12 @@ h2{
     font-size: 22px;
     margin-top: 45px;
     margin-bottom: 30px;
+}
+.footer .contect .box1 span{
+    font-size: 10px;
+    position: absolute;
+    top: 78px;
+    left: 96px;
 }
 .footer .gugi{
     font-family: 'Gugi', cursive;
@@ -1049,9 +1077,9 @@ h2{
     animation-duration: 0.6s;
 }
 .self i.rotate{
-    animation-name: selfArrow;
+    animation-name: Arrow;
 }
-@keyframes selfArrow{
+@keyframes Arrow{
         0%{transform: rotate(0);}
         100%{transform: rotate(360deg);}
 }
